@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/SoapService/UserServiceService?WSDL" uri="wsdl/localhost_8080/SoapService/UserServiceService.wsdl"/>
+    <system systemId="http://localhost:8080/SoapService/UserServiceService?xsd=1" uri="wsdl/localhost_8080/SoapService/UserServiceService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SoapService/VoitureService?WSDL" uri="wsdl/localhost_8080/SoapService/VoitureService.wsdl"/>
+    <system systemId="http://localhost:8080/SoapService/VoitureService?xsd=1" uri="wsdl/localhost_8080/SoapService/VoitureService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SoapService/ReservationService?WSDL" uri="wsdl/localhost_8080/SoapService/ReservationService.wsdl"/>
+    <system systemId="http://localhost:8080/SoapService/ReservationService?xsd=1" uri="wsdl/localhost_8080/SoapService/ReservationService.xsd_1.xsd"/>
+    <system systemId="https://localhost:44364/service.asmx?WSDL" uri="wsdl/localhost_44364/service.asmx.wsdl"/>
+    <system systemId="http://localhost:8080/RestFullService/webresources/application.wadl" uri="wsdl/localhost_8080/RestFullService/webresources/application.wadl.xml"/>
+</catalog>

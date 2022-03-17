@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service/">
+
+<xs:element name="AjouterV" type="tns:AjouterV"/>
+
+<xs:element name="AjouterVResponse" type="tns:AjouterVResponse"/>
+
+<xs:element name="AjouterVoiture" type="tns:AjouterVoiture"/>
+
+<xs:element name="AjouterVoitureResponse" type="tns:AjouterVoitureResponse"/>
+
+<xs:element name="afficher" type="tns:afficher"/>
+
+<xs:element name="afficherResponse" type="tns:afficherResponse"/>
+
+<xs:element name="delete" type="tns:delete"/>
+
+<xs:element name="deleteResponse" type="tns:deleteResponse"/>
+
+<xs:element name="getSingledem" type="tns:getSingledem"/>
+
+<xs:element name="getSingledemResponse" type="tns:getSingledemResponse"/>
+
+<xs:element name="modifier" type="tns:modifier"/>
+
+<xs:element name="modifierResponse" type="tns:modifierResponse"/>
+
+<xs:complexType name="afficher">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="afficherResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:voiture" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="voiture">
+<xs:sequence>
+<xs:element name="boiteVitesse" type="xs:string" minOccurs="0"/>
+<xs:element name="carburant" type="xs:string" minOccurs="0"/>
+<xs:element name="idVoiture" type="xs:int"/>
+<xs:element name="image" type="xs:string" minOccurs="0"/>
+<xs:element name="marque" type="xs:string" minOccurs="0"/>
+<xs:element name="maxPersonnes" type="xs:int"/>
+<xs:element name="prix" type="xs:int"/>
+<xs:element name="statut" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterVoiture">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+<xs:element name="arg4" type="xs:int"/>
+<xs:element name="arg5" type="xs:int"/>
+<xs:element name="arg6" type="xs:string" minOccurs="0"/>
+<xs:element name="arg7" type="xs:string" minOccurs="0"/>
+<xs:element name="arg8" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterVoitureResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:voiture" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delete">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterV">
+<xs:sequence>
+<xs:element name="arg0" type="tns:voiture" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterVResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifier">
+<xs:sequence>
+<xs:element name="v" type="tns:voiture" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifierResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSingledem">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSingledemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:voiture" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,148 @@
+.sidebar1 {
+    background-image: linear-gradient( #08051f, #0488ae );
+   
+    /* Standard syntax */
+    padding: 0 -200px 0px;
+    width: 0px;
+    min-height: 100%;
+    height: 800px;
+    margin: -120px;
+    margin-top: 50px;
+}
+.logo {
+    max-height: 130px;
+}
+.logo>img {
+    margin-top: 30px;
+    padding: 3px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.list {
+    color: #fff;
+    list-style: none;
+    padding-left: 0px;
+   
+   
+}
+.list::first-line {
+    color: rgba(255, 255, 255, 0.5);
+}
+.list> li, h5 {
+    padding: 2px 0px 3px 30px;
+}
+
+.list> h3{
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.list> li a {
+    color:#f6f6f6;
+    font-size: 20px;
+     border-left: 5px solid white;
+    font-weight: bolder;
+    padding-left: 7px;
+}
+
+
+
+.list>li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid white;
+    color: white;
+    font-weight: bolder;
+    padding-left: 35px;
+}
+
+.test{
+     margin: 7% 0;
+}
+
+
+.main-content{
+text-align:center;
+padding: 0 0 0 ;
+width: 150px;
+
+}
+
+
+#page-home{
+    width: 1110px;
+    height: 800px;
+    background-image: linear-gradient( white, #0488ae);
+    background-color:  #d9edf7;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 50px;
+    
+}
+.welkom {
+    
+   padding: 150px;
+    text-align: center;
+    margin: auto;
+    margin-left: 25px;
+    font-size: 60px;
+    color: #2e6da4;
+    font-family: serif;
+}
+
+
+
+.custab{
+    
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 2% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    
+    }
+.custab:hover{
+    box-shadow: 5px 3px 100px transparent;
+    transition: 0.5s;
+    }
+
+
+
+body { padding-top:30px; }
+.form-control { margin-bottom: 10px; }
+
+.custab tr th
+{
+ text-align: center; 
+}
+
+.custab .bttn{
+    width: 60px;
+}
+
+
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.cont{
+    
+    margin-top: 5%;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 déc. 2021, 20:38:47
+    Author     : Lenovo
+*/
+
